@@ -1,0 +1,19 @@
+{
+  "name": "chakramtest.js",
+  "version": "1.0.0",
+  "description": "cucumber tests",
+  "main": "chakramtest.js",
+  "dependencies": {
+    "cucumber": "^2.0.0-rc.9",
+    "selenium-webdriver": "^3.4.0"
+  },
+  "devDependencies": {
+    "cucumber": "^2.0.0-rc.9",
+    "selenium-webdriver": "^3.4.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "krishna",
+  "license": "ISC"
+}
