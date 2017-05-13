@@ -9,7 +9,7 @@ add iedriver, edgedriver, geckodriver and chromedriver to path variable
        
 run feature files using local cucumberjs or cucumber-js (in windows cucumber.js will open .js instead of running, cucumber.js will work in MAC and linux with out any issues)
 
-node_modules\.bin\cucumberjs features\documentation.feature
+node_modules\\.bin\cucumberjs features\documentation.feature
        
        
    
