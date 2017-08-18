@@ -5,5 +5,6 @@ Feature: Example feature
 
   Scenario: Reading documentation
     Given I am on the Cucumber.js GitHub repository
+    And I closed the Join GitHub today Dialogue
     When I click on "CLI"
     Then I should see "Running specific features"
