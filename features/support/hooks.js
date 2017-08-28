@@ -1,5 +1,4 @@
 var {defineSupportCode} = require('cucumber');
-var seleniumWebdriver = require('selenium-webdriver');
 
 defineSupportCode(function ({Before, After}) {
 
@@ -8,6 +7,21 @@ defineSupportCode(function ({Before, After}) {
     });
 
     After(function () {
+        return this.attach('Some text Krishna','text/plain');
+    });
+
+    After(function () {
         return this.driver.quit();
+    });
+
+    After(function (scenarioResult) {
+        var world = this;
+        if (scenarioResult.isFailed()) {
+            return this.driver.takeScreenshot().then(function(screenShot) {
+                // screenShot is a base-64 encoded PNG
+                //console.log(screenShot);
+                return world.attach(screenShot,'image/png');
+            });
+        }
     });
 });

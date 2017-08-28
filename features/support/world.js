@@ -4,10 +4,12 @@
 var seleniumWebdriver = require('selenium-webdriver');
 var {defineSupportCode} = require('cucumber');
 var firefox = require('selenium-webdriver/firefox');
-
 //var chrome = require('selenium-webdriver/chrome');
 
-function CustomWorld() {
+function CustomWorld({attach}) {
+
+    this.attach = attach;
+
     this.driver = new seleniumWebdriver.Builder()
         .forBrowser('firefox')
         .build();
@@ -20,8 +22,10 @@ function CustomWorld() {
 }
 
 defineSupportCode(function ({setDefaultTimeout, setWorldConstructor}) {
+
     setWorldConstructor(CustomWorld);
     setDefaultTimeout(60 * 1000);
+
 })
 
 //module.exports = defineSupportCode;
