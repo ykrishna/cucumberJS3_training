@@ -1,6 +1,3 @@
-//require('chromedriver')
-//require('geckodriver')
-
 var seleniumWebdriver = require('selenium-webdriver');
 var {defineSupportCode} = require('cucumber');
 var firefox = require('selenium-webdriver/firefox');
@@ -27,5 +24,3 @@ defineSupportCode(function ({setDefaultTimeout, setWorldConstructor}) {
     setDefaultTimeout(60 * 1000);
 
 })
-
-//module.exports = defineSupportCode;
