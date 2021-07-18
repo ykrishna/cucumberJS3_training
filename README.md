@@ -25,6 +25,7 @@ install cucumber html reporter module from npm
 `npm install cucumber-html-reporter --save-dev`       
 install gulp module as well  
 `npm install gulp --save-dev`  
+`npm install gulp -D` 
 create a gulpfile.js in current working directory
 use following code to generate reports  
 ```  
