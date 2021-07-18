@@ -1,4 +1,4 @@
-Fnode_modules/.bin/cucumberjs --help
+node_modules/.bin/cucumberjs --help
 
    Usage: cucumberjs [options] [<DIR|FILE[:LINE]>...]
 
@@ -19,4 +19,5 @@ Fnode_modules/.bin/cucumberjs --help
      -t, --tags <EXPRESSION>        only execute the features or scenarios with tags matching the expression
      --world-parameters <JSON>      provide parameters that will be passed to the world constructor (repeatable)
      -h, --help                     output usage information
+     
    For more details please visit https://github.com/cucumber/cucumber-js#cli
